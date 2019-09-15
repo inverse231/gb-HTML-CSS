@@ -219,7 +219,12 @@ header {
 
 .reviews__section {
     width: 100%;
+    background: #f5f5f5;
     box-sizing: border-box;
+    padding: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .reviews__section .section__h2 {
@@ -230,5 +235,124 @@ header {
 }
 
 .section__article {
-    
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 0 20px 0;
+    width: 50%;
+}
+
+.profile__pic {
+    background-color: #445161;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.article__text {
+    background: #ebebeb;
+    padding: 16px 20px 21px 27px;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.comment {
+    font: 400 italic 14px/18px Arial;
+    margin: 0 0 15px 0;
+    text-align: left;
+}
+
+.author_name {
+    font: 400 14px/18px Arial;
+    color: #989898;
+}
+
+.buy__section {
+    padding: 50px 145px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 656px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.buy__section .section__h2 {
+    margin: 0 0 29px 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.section__item {
+    width: 30%;
+    text-align: center;
+    background: #445162;
+    border-radius: 3%;
+    padding-top: 16px;
+    box-sizing: border-box;
+}
+
+.section__item:nth-child(2) {
+    min-height: 306px;
+}
+
+.section__item:nth-child(3) {
+    min-height: 404px;
+}
+
+.section__item:last-child {
+    min-height: 499px;
+}
+
+.section__item_h3 {
+    font: 400 24px/30px Arial;
+    color: #ffffff;
+    margin: 0 0 17px 0;
+}
+
+.price {
+    display: block;
+    width: 100%;
+    min-height: 71px;
+    background: #ffffff;
+    color: #445162;
+    font: 400 40px/30px Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #445162;
+    box-sizing: border-box;
+}
+
+.parameters {
+    list-style-position: inside;
+    color: #ffffff;
+    font: 400 14px/25px Arial;
+    text-align: left;
+    padding: 19px 38px 21px 20px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.buy__button {
+    display: block;
+    width: calc(100% - 40px);
+    background: #ffffff;
+    margin: 0 auto 20px auto;
+    min-height: 40px;
+    border-radius: 7px;
+    font: 400 18px/18px Arial;
+    text-transform: uppercase;
+    color: #445162;
+    padding: 0;
+}
+
+.contact__section {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 509px;
+    background: #445162;
+    color: #ffffff;
 }
