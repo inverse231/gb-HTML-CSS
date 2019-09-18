@@ -80,14 +80,15 @@ header {
 }
 
 .section__h2 {
-    font-family: "Arial";
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 36px;
+    font: 400 30px/36px Arial;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 0 29px 0;
 }
 
 .about__section .section__h2 {
-    margin: 0 0 20px 0;
+    text-align: left;
 }
 
 .section__text {
@@ -122,13 +123,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.dignity__section .section__h2 {
-    margin: 0 0 29px 0;
-    text-align: center;
-    display: block;
-    width: 100%;
 }
 
 .dignity__wrapper {
@@ -180,12 +174,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.screenshot__section .section__h2 {
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin: 0 0 25px 0;
-}
+
 .screenshot {
     display: flex;
     justify-content: space-around;
@@ -225,13 +214,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.reviews__section .section__h2 {
-    margin: 0 0 29px 0;
-    text-align: center;
-    display: block;
-    width: 100%;
 }
 
 .section__article {
@@ -276,13 +258,6 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
-}
-
-.buy__section .section__h2 {
-    margin: 0 0 29px 0;
-    text-align: center;
-    display: block;
-    width: 100%;
 }
 
 .section__item {
@@ -347,6 +322,7 @@ header {
     text-transform: uppercase;
     color: #445162;
     padding: 0;
+    outline: none;
 }
 
 .contact__section {
@@ -355,4 +331,51 @@ header {
     min-height: 509px;
     background: #445162;
     color: #ffffff;
+    padding: 53px 246px 0 249px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+.section__form {
+    width: 50%;
+    min-height: 545px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__form input[type=submit] {
+    text-transform: uppercase;
+    width: 140px;
+    min-height: 40px;
+    background: #ffffff;
+    color: #445162;
+}
+
+/*import fontawesome icons*/
+.icon {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.contact__text_skype::before {
+    content: "";
+    background-position: contain;
+    background-image:  url(../img/skype-brands.svg);
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 26px;
+}
+
+.footer__text {
+    display: block;
+    text-align: center;
+}
+
