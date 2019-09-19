@@ -409,6 +409,7 @@ header {
   border-radius: 5px;
   background-color:  #ffffff;
   outline: none;
+  resize: none;
 }
 .section__form input[type=submit] {
     border-radius: 5px;
